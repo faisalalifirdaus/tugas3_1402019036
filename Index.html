@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport", content="width=device-width, initial-scale=1">
+	<title>Tugas 3 DPW</title>
+</head>
+<body>
+
+<div>
+	<span>3D Kalkulator</span>
+	<p>Menghitung volume dan luas dari silinder, kerucut dan bola.</p>
+	<h4>Silinder</h4>
+	
+	<label for="jari-jari">Masukkan jari-jari silinder (dalam meter)</label>
+	<input type="text" name="jari-jari" id="jari-jari"> <br>
+	<label for="tinggi" id="jari-jari">Masukkan tinggi silinder (dalam meter)</label>
+	<input type="text" name="tinggi" id="tinggi"> <br>
+	<button type="button" onclick="silinder()">Hitung!</button>
+	<h3>Hasil Perhitungan</h3>
+	<p>Luas permukaan: <b id="luas"></b>m<sup>2</sup></p>
+	<p id="hasil">Volume: <b id="volume"></b>m<sup>3</sup></p>
+	<h4 id="tipe">Kerucut</h4>
+	
+	<label for="jari-jari">Masukkan jari-jari kerucut (dalam meter)</label>
+	<input type="text" name="jari-jari" id="jari-jari"> <br>
+	<label for="garis" id="jari-jari">Masukkan garis pelukis kerucut (dalam meter)</label>
+	<input type="text" name="garis" id="garis"> <br>
+	<label for="tinggi" id="jari-jari">Masukkan tinggi kerucut (dalam meter)</label>
+	<input type="text" name="tinggi" id="tinggi"> <br>
+	<button type="button" onclick="kerucut()">Hitung!</button>
+	<h3>Hasil Perhitungan</h3>
+
+	<p id="hasil">Luas permukaan: <b id="luas"></b>m<sup>2</sup></p>
+	<p id="hasil">Volume: <b id="volume"></b>m<sup>3</sup></p>
+	<h4 id="tipe">Bola</h4>
+	
+	<label for="jari-jari-bola">Masukkan jari-jari bola (dalam meter)</label>
+	<input type="text" name="jari-jari" id="jari-jari-bola"> <br>
+	<button type="button" onclick="bola()">Hitung!</button>
+
+	<h3>Hasil Perhitungan</h3>
+
+	<p id="hasil">Luas permukaan: <b id="luas"></b>m<sup>2</sup></p>
+	<p id="hasil">Volume: <b id="volume"></b>m<sup>3</sup></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
